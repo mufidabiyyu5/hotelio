@@ -1,0 +1,17 @@
+{
+    "id": "",
+    "id_hotel": "",
+    "cover": "",
+    "name": "",
+    "location": "",
+    "date": "",
+    "guest": 2,
+    "breakfast": "",
+    "check_in_time": "",
+    "night": 1,
+    "service_fee": 123,
+    "activities": 123,
+    "total_payment": 12,
+    "status": "",
+    "is_done": true
+}

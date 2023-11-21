@@ -1,0 +1,23 @@
+{
+    "id": "",
+    "name": "",
+    "description": "",
+    "cover": "",
+    "price": "",
+    "rate": "",
+    "images": [""],
+    "location": "",
+    "category": "",
+    "activities": [
+        {
+            "image": "",
+            "name": ""
+        }
+    ],
+    "facilities": [
+        {
+            "icon": "",
+            "name": ""
+        }
+    ]
+}
