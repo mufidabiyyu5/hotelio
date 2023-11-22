@@ -7,6 +7,7 @@ import 'package:hotelio/app/config/app_format.dart';
 import 'package:hotelio/app/data/models/booking_model.dart';
 import 'package:hotelio/app/data/models/hotel_model.dart';
 import 'package:hotelio/app/modules/home/controllers/user_controller.dart';
+import 'package:hotelio/app/routes/app_pages.dart';
 import 'package:hotelio/app/sources/booking_source.dart';
 
 import '../controllers/detail_page_controller.dart';
@@ -210,7 +211,8 @@ class DetailPageView extends GetView<DetailPageController> {
               ),
               ButtonCustom(
                 label: "Booking Now",
-                onPressed: () {},
+                onPressed: () =>
+                    Get.toNamed(Routes.PAYMENT_PAGE, arguments: hotel),
                 isExpand: false,
               ),
             ],

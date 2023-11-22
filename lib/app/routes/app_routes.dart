@@ -8,6 +8,8 @@ abstract class Routes {
   static const INTRO = _Paths.INTRO;
   static const SIGN_IN = _Paths.SIGN_IN;
   static const DETAIL_PAGE = _Paths.DETAIL_PAGE;
+  static const PAYMENT_PAGE = _Paths.PAYMENT_PAGE;
+  static const SUCCESS_PAGE = _Paths.SUCCESS_PAGE;
 }
 
 abstract class _Paths {
@@ -17,4 +19,6 @@ abstract class _Paths {
   static const INTRO = '/intro';
   static const SIGN_IN = '/sign-in';
   static const DETAIL_PAGE = '/detail-page';
+  static const PAYMENT_PAGE = '/payment-page';
+  static const SUCCESS_PAGE = '/success-page';
 }

@@ -16,21 +16,21 @@ class Booking {
   bool? isDone;
 
   Booking(
-      {this.id,
-      this.idHotel,
-      this.cover,
-      this.name,
-      this.location,
-      this.date,
-      this.guest,
-      this.breakfast,
-      this.checkInTime,
-      this.night,
-      this.serviceFee,
-      this.activities,
-      this.totalPayment,
-      this.status,
-      this.isDone});
+      {required this.id,
+      required this.idHotel,
+      required this.cover,
+      required this.name,
+      required this.location,
+      required this.date,
+      required this.guest,
+      required this.breakfast,
+      required this.checkInTime,
+      required this.night,
+      required this.serviceFee,
+      required this.activities,
+      required this.totalPayment,
+      required this.status,
+      required this.isDone});
 
   Booking.fromJson(Map<String, dynamic> json) {
     id = json['id'];

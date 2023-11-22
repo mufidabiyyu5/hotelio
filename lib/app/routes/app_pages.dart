@@ -9,6 +9,9 @@ import '../modules/detail_page/views/detail_page_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/home/views/intro_view.dart';
+import '../modules/payment_page/bindings/payment_page_binding.dart';
+import '../modules/payment_page/views/payment_page_view.dart';
+import '../modules/payment_page/views/success_page_view.dart';
 import '../modules/sign_in/bindings/sign_in_binding.dart';
 import '../modules/sign_in/views/sign_in_view.dart';
 
@@ -52,6 +55,15 @@ class AppPages {
       name: _Paths.DETAIL_PAGE,
       page: () => DetailPageView(),
       binding: DetailPageBinding(),
+    ),
+    GetPage(
+      name: _Paths.PAYMENT_PAGE,
+      page: () => PaymentPageView(),
+      binding: PaymentPageBinding(),
+    ),
+    GetPage(
+      name: _Paths.SUCCESS_PAGE,
+      page: () => SuccessPageView(),
     ),
   ];
 }
