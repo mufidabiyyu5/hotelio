@@ -61,7 +61,7 @@ class SuccessPageView extends GetView {
                 label: "View My Booking",
                 onPressed: () {
                   home.i.value = 1;
-                  Get.offAll(Routes.HOME);
+                  Get.offNamed(Routes.HOME);
                 },
                 isExpand: false,
               ),

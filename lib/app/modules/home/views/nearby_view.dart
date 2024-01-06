@@ -272,6 +272,8 @@ class NearbyView extends GetView {
   }
 
   Padding header(BuildContext context) {
+    String text = cNearby.listHotel.length > 1 ? "Hotels" : "Hotel";
+
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 24),
       child: Row(
@@ -289,7 +291,7 @@ class NearbyView extends GetView {
           Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              Text(
+              const Text(
                 "Near Me",
                 style: TextStyle(
                   color: Colors.black,
@@ -297,14 +299,14 @@ class NearbyView extends GetView {
                   fontWeight: FontWeight.w700,
                 ),
               ),
-              Text(
-                "189 hotels",
-                style: TextStyle(
-                  color: Colors.grey,
-                  fontSize: 14,
-                  fontWeight: FontWeight.w400,
-                ),
-              ),
+              Obx(() => Text(
+                    "${cNearby.listHotel.length} $text",
+                    style: const TextStyle(
+                      color: Colors.grey,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  )),
             ],
           ),
         ],

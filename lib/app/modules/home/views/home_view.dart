@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import 'package:hotelio/app/components/button_custom.dart';
 import 'package:hotelio/app/config/app_assets.dart';
 import 'package:hotelio/app/config/app_colors.dart';
+import 'package:hotelio/app/modules/history_page/views/history_page_view.dart';
 import 'package:hotelio/app/modules/home/views/nearby_view.dart';
 
 import '../controllers/home_controller.dart';
@@ -30,9 +31,7 @@ class HomeView extends GetView<HomeController> {
             if (controller.i.value == 0) {
               return NearbyView();
             } else if (controller.i.value == 1) {
-              return Center(
-                child: Text("HistoryPage"),
-              );
+              return HistoryPageView();
             } else if (controller.i.value == 2) {
               return Center(
                 child: Text("PaymentPage"),

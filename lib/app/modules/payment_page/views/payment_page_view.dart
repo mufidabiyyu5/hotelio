@@ -57,7 +57,7 @@ class PaymentPageView extends GetView<PaymentPageController> {
                     cover: hotel.cover,
                     name: hotel.name,
                     location: hotel.location,
-                    date: DateFormat('yyyy-mm-dd').format(DateTime.now()),
+                    date: DateFormat('yyyy-MM-dd').format(DateTime.now()),
                     guest: 2,
                     breakfast: 'Included',
                     checkInTime: '14.00 WIB',

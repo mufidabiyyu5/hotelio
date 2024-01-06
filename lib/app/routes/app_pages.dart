@@ -1,11 +1,14 @@
 import 'package:flutter/widgets.dart';
 
 import 'package:get/get.dart';
+import 'package:hotelio/app/modules/history_page/views/detail_history_view.dart';
 
 import '../config/session.dart';
 import '../data/models/user_model.dart';
 import '../modules/detail_page/bindings/detail_page_binding.dart';
 import '../modules/detail_page/views/detail_page_view.dart';
+import '../modules/history_page/bindings/history_page_binding.dart';
+import '../modules/history_page/views/history_page_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/home/views/intro_view.dart';
@@ -64,6 +67,15 @@ class AppPages {
     GetPage(
       name: _Paths.SUCCESS_PAGE,
       page: () => SuccessPageView(),
+    ),
+    GetPage(
+      name: _Paths.HISTORY_PAGE,
+      page: () => HistoryPageView(),
+      binding: HistoryPageBinding(),
+    ),
+    GetPage(
+      name: _Paths.HISTORY_DETAIL_PAGE,
+      page: () => DetailHistoryView(),
     ),
   ];
 }

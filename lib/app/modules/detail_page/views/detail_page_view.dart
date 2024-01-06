@@ -149,7 +149,12 @@ class DetailPageView extends GetView<DetailPageController> {
                   shadowColor: AppColor.secondaryColor,
                   elevation: 8,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Get.toNamed(
+                    Routes.HISTORY_DETAIL_PAGE,
+                    arguments: controller.bookedData,
+                  );
+                },
                 child: const Text(
                   "View Receipt",
                   style: TextStyle(
